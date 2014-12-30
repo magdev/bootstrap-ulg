@@ -265,6 +265,19 @@ select[multiple].input-group-ulg > .input-group-btn > .btn {
     line-height: 46px;
   }
 }
+@media (min-width: 992px) {
+  .modal-dialog {
+    width: 600px;
+    margin: 30px auto;
+  }
+  .modal-content {
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+  .modal-md {
+    width: 600px;
+  }
+}
 @media (min-width: 1200px) {
   .modal-ulg {
     width: 1200px;
@@ -307,23 +320,15 @@ select[multiple].input-group-ulg > .input-group-btn > .btn {
   td.visible-ulg {
     display: table-cell !important;
   }
-}
-@media (min-width: 1600px) {
   .visible-ulg-block {
     display: block !important;
   }
-}
-@media (min-width: 1600px) {
   .visible-ulg-inline {
     display: inline !important;
   }
-}
-@media (min-width: 1600px) {
   .visible-ulg-inline-block {
     display: inline-block !important;
   }
-}
-@media (min-width: 1600px) {
   .hidden-ulg {
     display: none !important;
   }
