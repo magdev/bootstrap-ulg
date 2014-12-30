@@ -1,0 +1,47 @@
+//
+// The MIT License (MIT)
+// 
+// Copyright (c) 2014 Marco Grätsch
+// 
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+// 
+// The above copyright notice and this permission notice shall be included in
+// all copies or substantial portions of the Software.
+// 
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+// THE SOFTWARE.
+//
+
+//
+// Bootstrap 3 ULG variables
+//
+@import "../bower_components/bootstrap/less/variables.less";
+
+
+@font-size-ultralarge:              ceil((@font-size-base * 1.5)); // ~20px
+//** Deprecated `@screen-ulg` as of v3.0.1
+@screen-ulg:                        1600px;
+@screen-ulg-min:                    @screen-ulg;
+//** Deprecated `@screen-ulg-desktop` as of v3.0.1
+@screen-ulg-desktop:                @screen-ulg-min;
+@screen-lg-max:                     (@screen-ulg-min - 1);
+@container-ultralarge-desktop:      (1540px + @grid-gutter-width);
+@container-ulg:                     @container-ultralarge-desktop;
+@modal-ulg:                         1200px;
+@padding-ultralarge-vertical:       12px;
+@padding-ultralarge-horizontal:     18px;
+@line-height-ultralarge:            1.66;
+@border-radius-ultralarge:          8px;
+@caret-width-ultralarge:            6px;
+@input-border-radius-ultralarge:    @border-radius-ultralarge;
+@input-height-ultralarge:           (ceil(@font-size-ultralarge * @line-height-ultralarge) + (@padding-ultralarge-vertical * 2) + 2);

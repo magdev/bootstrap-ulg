@@ -1,0 +1,23 @@
+{
+    "name":"bootstrap-ulg",
+    "version":"0.0.1",
+    "homepage":"https://github.com/magdev/bootstrap-ulg",
+    "authors":[
+        "magdev <magdev3.0@gmail.com>"
+    ],
+    "description":"Bootstrap 3 plugin for ultra-large screensizes",
+    "keywords":[
+        "bootstrap",
+        "plugin"
+    ],
+    "license":"MIT",
+    "ignore":[
+        "**/.*",
+        "bower_components",
+        "node_modules",
+        "*.md"
+    ],
+    "devDependencies":{
+        "bootstrap":"~3.x"
+    }
+}

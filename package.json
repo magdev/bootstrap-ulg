@@ -1,0 +1,25 @@
+{
+    "name":"bootstrap-ulg",
+    "version":"0.0.1",
+    "description":"Bootstrap 3 plugin for ultra-large screensizes",
+    "main":"dist/bootstrap-ulg.min.css",
+    "repository":{
+        "type":"git",
+        "url":"https://github.com/magdev/bootstrap-ulg"
+    },
+    "keywords":[
+        "bootstrap",
+        "plugin"
+    ],
+    "author":"magdev <magdev3.0@gmail.com>",
+    "license":"MIT",
+    "bugs":{
+        "url":"https://github.com/magdev/bootstrap-ulg/issues"
+    },
+    "devDependencies":{
+        "grunt-contrib-watch":"~0.5.3",
+        "grunt":"~0.4.1",
+        "grunt-contrib-less":"~0.11.0",
+        "grunt-cli":"~0.1.9"
+    }
+}

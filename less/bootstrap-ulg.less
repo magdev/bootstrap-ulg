@@ -1,0 +1,145 @@
+//
+// The MIT License (MIT)
+// 
+// Copyright (c) 2014 Marco Grätsch
+// 
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+// 
+// The above copyright notice and this permission notice shall be included in
+// all copies or substantial portions of the Software.
+// 
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+// THE SOFTWARE.
+//
+
+//
+// Bootstrap 3 ULG - a plugin for ultra-large screensizes
+//
+
+//== Import variables and mixins
+@import "../bower_components/bootstrap/less/variables.less";
+@import "../bower_components/bootstrap/less/mixins.less";
+@import "variables.less";
+
+
+//== Grid
+.container {
+    @media (min-width: @screen-ulg-min) {
+        width: @container-ulg;
+    }
+}
+@media (min-width: @screen-ulg-min) {
+    .make-grid(ulg);
+}
+
+
+//== Buttons and Buttongroups
+.btn-ulg {
+    .button-size(@padding-ultralarge-vertical; @padding-ultralarge-horizontal; @font-size-ultralarge; @line-height-ultralarge; @border-radius-ultralarge);
+}
+.btn-group-ulg > .btn { 
+    &:extend(.btn-ulg);
+}
+.btn-group > .btn-ulg + .dropdown-toggle {
+    padding-left: 14px;
+    padding-right: 14px;
+}
+.btn-ulg .caret {
+  border-width: @caret-width-ultralarge @caret-width-ultralarge 0;
+  border-bottom-width: 0;
+}
+.dropup .btn-ulg .caret {
+  border-width: 0 @caret-width-ultralarge @caret-width-ultralarge;
+}
+
+
+//== Forms and Input-Groups
+.input-ulg,
+.form-group-ulg .form-control {
+    .input-size(@input-height-ultralarge; @padding-ultralarge-vertical; @padding-ultralarge-horizontal; @font-size-ultralarge; @line-height-ultralarge; @input-border-radius-ultralarge);
+}
+.input-ulg + .form-control-feedback {
+    width: @input-height-ultralarge;
+    height: @input-height-ultralarge;
+    line-height: @input-height-ultralarge;
+}
+.input-group-ulg > .form-control,
+.input-group-ulg > .input-group-addon,
+.input-group-ulg > .input-group-btn > .btn {
+    .input-ulg();
+}
+.input-group-addon {
+    &.input-ulg {
+        padding: @padding-ultralarge-vertical @padding-ultralarge-horizontal;
+        font-size: @font-size-ultralarge;
+        border-radius: @border-radius-ultralarge;
+    }
+}
+
+
+//== Modals
+@media (min-width: @screen-lg-min) {
+    .modal-ulg { 
+        width: @modal-ulg;
+    }
+}
+
+
+//== Pagination
+.pagination-ulg {
+    .pagination-size(@padding-ultralarge-vertical; @padding-ultralarge-horizontal; @font-size-ultralarge; @border-radius-ultralarge);
+}
+
+
+//== Responsive utilities
+.visible-ulg {
+    .responsive-invisibility();
+}
+.visible-ulg-block,
+.visible-ulg-inline,
+.visible-ulg-inline-block {
+    display: none !important;
+}
+.visible-ulg {
+    @media (min-width: @screen-ulg-min) {
+        .responsive-visibility();
+    }
+}
+.visible-ulg-block {
+    @media (min-width: @screen-ulg-min) {
+        display: block !important;
+    }
+}
+.visible-ulg-inline {
+    @media (min-width: @screen-ulg-min) {
+        display: inline !important;
+    }
+}
+.visible-ulg-inline-block {
+    @media (min-width: @screen-ulg-min) {
+        display: inline-block !important;
+    }
+}
+.hidden-ulg {
+    @media (min-width: @screen-ulg-min) {
+        .responsive-invisibility();
+    }
+}
+
+
+//== Wells
+.well-ulg {
+    padding: 28px;
+    border-radius: @border-radius-ultralarge;
+}
+
