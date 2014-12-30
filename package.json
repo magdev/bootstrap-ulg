@@ -1,6 +1,6 @@
 {
     "name":"bootstrap-ulg",
-    "version":"0.0.3",
+    "version":"0.0.4",
     "description":"Bootstrap 3 plugin for ultra-large screensizes",
     "main":"dist/bootstrap-ulg.min.css",
     "repository":{
