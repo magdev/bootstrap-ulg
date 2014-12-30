@@ -85,6 +85,30 @@
         border-radius: @border-radius-ultralarge;
     }
 }
+.input-group.input-group-ulg .form-control:first-child,
+.input-group-ulg .input-group-addon:first-child,
+.input-group-ulg .input-group-btn:first-child > .btn,
+.input-group-ulg .input-group-btn:first-child > .btn-group > .btn,
+.input-group-ulg .input-group-btn:first-child > .dropdown-toggle,
+.input-group-ulg .input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle),
+.input-group-ulg .input-group-btn:last-child > .btn-group:not(:last-child) > .btn {
+  .border-right-radius(0);
+}
+.input-group-ulg .input-group-addon:first-child {
+  border-right: 0;
+}
+.input-group.input-group-ulg .form-control:last-child,
+.input-group-ulg .input-group-addon:last-child,
+.input-group-ulg .input-group-btn:last-child > .btn,
+.input-group-ulg .input-group-btn:last-child > .btn-group > .btn,
+.input-group-ulg .input-group-btn:last-child > .dropdown-toggle,
+.input-group-ulg .input-group-btn:first-child > .btn:not(:first-child),
+.input-group-ulg .input-group-btn:first-child > .btn-group:not(:first-child) > .btn {
+  .border-left-radius(0);
+}
+.input-group-ulg .input-group-addon:last-child {
+  border-left: 0;
+}
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   input[type="date"].input-ulg,
   input[type="time"].input-ulg,
