@@ -28,7 +28,7 @@ Use the *-ulg styles in the same way as the other size-related classes.
     <div class="col-ulg-10">
         <h1>Lorem ipsum dolor</h1>
     </div>
-    <div class="col-ulg-1 col-ulg-push-1">
+    <div class="col-ulg-1 col-ulg-offset-1">
         <button type="button" class="btn btn-primary btn-ulg">Button</button>
     </div>
 </div>
