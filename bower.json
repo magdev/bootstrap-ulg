@@ -13,9 +13,11 @@
     "license":"MIT",
     "ignore":[
         "**/.*",
+        "Gruntfile.js",
         "bower_components",
         "node_modules",
-        "*.md"
+        "*.md",
+        "example/"
     ],
     "devDependencies":{
         "bootstrap":"~3.x"
