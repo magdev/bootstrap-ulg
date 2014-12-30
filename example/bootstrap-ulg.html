@@ -16,18 +16,18 @@
 				</div>
 				<ul class="nav navbar-nav">
 			        <li class="dropdown">
-                           <a href="#" id="dLabel" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                               Supported Elements
-                               <span class="caret"></span>
-                           </a>
-                           <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-                               <li><a href="#grid">Grid-System</a></li>
-                               <li><a href="#buttons">Buttons, Button-Groups</a></li>
-                               <li><a href="#forms">Form- and Input-Elements, Input-Groups</a></li>
-                               <li><a href="#responsive">Responsive Utilities</a></li>
-                               <li><a href="#wells">Wells</a></li>
-                               <li><a href="#buttons">Modals</a></li>
-                               <li><a href="#pagination">Pagination</a></li>
+                        <a href="#" id="dLabel" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Supported Elements
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                            <li><a href="#grid">Grid-System</a></li>
+                            <li><a href="#buttons">Buttons, Button-Groups</a></li>
+                            <li><a href="#forms">Form- and Input-Elements, Input-Groups</a></li>
+                            <li><a href="#responsive">Responsive Utilities</a></li>
+                            <li><a href="#wells">Wells</a></li>
+                            <li><a href="#buttons">Modals</a></li>
+                            <li><a href="#pagination">Pagination</a></li>
 					    </ul>
 			        </li>
 			    </ul>
@@ -42,12 +42,14 @@
 				<hr/>
 				<h2 id="grid">Grid-System</h2>
 				<p>This grid is defined like this:</p>
-				<pre>
-&lt;div class="row"&gt;
-    &lt;div class="col-ulg-8 col-lg-9 col-md-8"&gt;&lt;!-- Left Column --&gt;&lt;/div&gt;
-    &lt;div class="col-ulg-2 col-ulg-offset-2 col-lg-3 col-md-4"&gt;&lt;!-- Right Column --&gt;&lt;/div&gt;
-&lt;/div&gt;
-				</code></pre>
+				<pre>&lt;div class="row"&gt;
+    &lt;div class="col-ulg-8 col-lg-9 col-md-8"&gt;
+        &lt;!-- Left Column --&gt;
+    &lt;/div&gt;
+    &lt;div class="col-ulg-2 col-ulg-offset-2 col-lg-3 col-md-4"&gt;
+        &lt;!-- Right Column --&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
 				<hr/>
 				<h2 id="responsive">Responsive Utilities <small><em>(Rescale window to see the effect)</em></small></h2>
 				<p class="alert alert-success visible-ulg hidden-lg">Visible on ULG</p>
@@ -64,7 +66,81 @@
                 </div>
 				<hr/>
 				<h2 id="forms">Form- and Input-Elements, Input-Groups</h2>
-				
+				<div class="row">
+				    <div class="col-lg-6">
+				        <form>
+                            <div class="form-group form-group-ulg">
+							    <label for="exampleInputEmail1">Email address</label>
+							    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+					        </div>
+						    <div class="form-group form-group-ulg">
+						        <label for="exampleInputPassword1">Password</label>
+						        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+						    </div>
+						    <div class="checkbox">
+							    <label>
+							        <input type="checkbox"> Check me out
+							    </label>
+						    </div>
+						    <button type="submit" class="btn btn-default btn-ulg">Submit</button>
+						</form>
+				    </div>
+                    <div class="col-lg-6">
+                        <form>
+                            <div class="form-group form-group-lg">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                            </div>
+                            <div class="form-group form-group-lg">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Check me out
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-default btn-lg">Submit</button>
+                        </form>
+                    </div>
+				</div>
+				<h3>Input-Groups</h3>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="input-group input-group-ulg">
+                            <span class="input-group-addon" id="basic-addon1">@</span>
+                            <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+                        </div>
+                        <br/>
+                        <div class="input-group input-group-ulg">
+                            <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
+                            <span class="input-group-addon" id="basic-addon2">@example.com</span>
+                        </div>
+                        <br/>
+                        <div class="input-group input-group-ulg">
+                            <span class="input-group-addon">$</span>
+                            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                            <span class="input-group-addon">.00</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-addon" id="basic-addon3">@</span>
+                            <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon3">
+                        </div>
+                        <br/>
+                        <div class="input-group input-group-lg">
+                            <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon4">
+                            <span class="input-group-addon" id="basic-addon4">@example.com</span>
+                        </div>
+                        <br/>
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-addon">$</span>
+                            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                            <span class="input-group-addon">.00</span>
+                        </div>
+                    </div>
+                </div>
                 <hr/>
                 <h2 id="pagination">Pagination</h2>
                 <div class="row">
@@ -132,22 +208,6 @@
 			        </div>
                     <div class="col-lg-12 col-sm-3">
 		                <p>
-		                    <div class="btn-group btn-group-ulg" role="group">
-		                        <button type="button" class="btn btn-default">1</button>
-		                        <button type="button" class="btn btn-default">2</button>
-		                        <button type="button" class="btn btn-default">3</button>
-		                    </div>
-		                </p>
-		                <p>
-		                    <div class="btn-group btn-group-lg" role="group">
-		                        <button type="button" class="btn btn-default">1</button>
-		                        <button type="button" class="btn btn-default">2</button>
-		                        <button type="button" class="btn btn-default">3</button>
-		                    </div>
-		                </p>
-                    </div>
-                    <div class="col-lg-12 col-sm-3">
-		                <p>
 		                    <div class="dropdown">
 		                        <button class="btn btn-default btn-ulg dropdown-toggle" type="button" id="dropdownMenuULG" data-toggle="dropdown" aria-expanded="true">
 		                            Dropdown ULG
@@ -181,6 +241,22 @@
 		                        </ul>
 		                    </div>
 		                </p>
+                    </div>
+                    <div class="col-lg-12 col-sm-3">
+                        <p>
+                            <div class="btn-group btn-group-ulg" role="group">
+                                <button type="button" class="btn btn-default">1</button>
+                                <button type="button" class="btn btn-default">2</button>
+                                <button type="button" class="btn btn-default">3</button>
+                            </div>
+                        </p>
+                        <p>
+                            <div class="btn-group btn-group-lg" role="group">
+                                <button type="button" class="btn btn-default">1</button>
+                                <button type="button" class="btn btn-default">2</button>
+                                <button type="button" class="btn btn-default">3</button>
+                            </div>
+                        </p>
                     </div>
 			    </div>
 			</div>

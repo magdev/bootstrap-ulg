@@ -86,6 +86,14 @@
     }
 }
 
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  input[type="date"].input-ulg,
+  input[type="time"].input-ulg,
+  input[type="datetime-local"].input-ulg,
+  input[type="month"].input-ulg {
+      line-height: @input-height-large;
+  }
+}
 
 //== Modals
 @media (min-width: @screen-lg-min) {
