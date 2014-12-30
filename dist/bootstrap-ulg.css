@@ -279,6 +279,19 @@ select[multiple].input-group-ulg > .input-group-btn > .btn {
   }
 }
 @media (min-width: 1200px) {
+  .modal-dialog {
+    width: 900px;
+    margin: 30px auto;
+  }
+  .modal-content {
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+  .modal-md {
+    width: 900px;
+  }
+}
+@media (min-width: 1600px) {
   .modal-ulg {
     width: 1200px;
   }
