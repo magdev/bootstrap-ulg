@@ -231,6 +231,14 @@ select[multiple].input-group-ulg > .input-group-btn > .btn {
   font-size: 21px;
   border-radius: 8px;
 }
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  input[type="date"].input-ulg,
+  input[type="time"].input-ulg,
+  input[type="datetime-local"].input-ulg,
+  input[type="month"].input-ulg {
+    line-height: 46px;
+  }
+}
 @media (min-width: 1200px) {
   .modal-ulg {
     width: 1200px;
