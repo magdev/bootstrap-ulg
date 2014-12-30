@@ -29,6 +29,7 @@
 //== Import variables and mixins
 @import "../bower_components/bootstrap/less/variables.less";
 @import "../bower_components/bootstrap/less/mixins.less";
+@import "../bower_components/bootstrap/less/mixins/border-radius.less";
 @import "variables.less";
 
 
@@ -142,28 +143,20 @@
 .visible-ulg-inline-block {
     display: none !important;
 }
-.visible-ulg {
-    @media (min-width: @screen-ulg-min) {
+@media (min-width: @screen-ulg-min) {
+    .visible-ulg {
         .responsive-visibility();
     }
-}
-.visible-ulg-block {
-    @media (min-width: @screen-ulg-min) {
+    .visible-ulg-block {
         display: block !important;
     }
-}
-.visible-ulg-inline {
-    @media (min-width: @screen-ulg-min) {
+    .visible-ulg-inline {
         display: inline !important;
     }
-}
-.visible-ulg-inline-block {
-    @media (min-width: @screen-ulg-min) {
+    .visible-ulg-inline-block {
         display: inline-block !important;
     }
-}
-.hidden-ulg {
-    @media (min-width: @screen-ulg-min) {
+    .hidden-ulg {
         .responsive-invisibility();
     }
 }
