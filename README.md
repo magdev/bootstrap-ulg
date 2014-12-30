@@ -2,6 +2,17 @@
 
 A Bootstrap 3 stylesheet for ultra-large (>= 1600px) screens.
 
+## Install
+
+Using bower
+
+```bash
+bower install bootstrap-ulg
+```
+
+Or download the desired css file from the [dist-folder](dist/) manually.
+
+
 ## Usage
 
 Include the stylesheet after bootstrap.css
